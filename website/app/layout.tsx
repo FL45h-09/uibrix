@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "@/_assets/css/globals.css";
+import { ClerkProvider } from '@clerk/nextjs'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -55,10 +56,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children, }: Readonly<{children: React.ReactNode;}>) {
   return (
+    <ClerkProvider>
       <html lang="en">
         <body className={`${poppins.className} ${brockmann.variable}`}>
           {children}
         </body>
       </html>
+    </ClerkProvider>
     );
 }
