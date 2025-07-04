@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@uibrix/bricks": ["packages/_brix"]
+    }
+  }
+}

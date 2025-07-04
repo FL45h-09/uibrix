@@ -1,0 +1,58 @@
+# --------------------------------------
+# 🍱 Monorepo: Website + Packages
+# --------------------------------------
+
+# node modules
+**/node_modules/
+.pnpm-debug.log*
+
+# pnpm
+.pnpm-store
+pnpm-lock.yaml
+
+# Yarn / PnP (if someone switches)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnp.*
+.pnp/
+
+# Next.js output
+website/.next/
+website/out/
+
+# Build output (packages)
+packages/**/dist/
+packages/**/build/
+
+# Vercel
+.vercel/
+
+# Testing / Coverage
+coverage/
+**/coverage/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# macOS junk
+.DS_Store
+
+# Certificates / secrets
+*.pem
