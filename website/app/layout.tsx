@@ -8,6 +8,7 @@ const poppins = Poppins({
   weight: ['400', '500', '600', "700"],
   style: ['normal'],
   display: 'swap',
+  variable: '--font-poppins',
 });
 const brockmann = localFont({ 
     src : "./_assets/fonts/brockmann/brockmann-medium.woff2",
@@ -55,7 +56,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children, }: Readonly<{children: React.ReactNode;}>) {
   return (
       <html lang="en">
-        <body className={`${poppins.className}`}>
+        <body className={`${poppins.className} ${brockmann.variable}`}>
           {children}
         </body>
       </html>

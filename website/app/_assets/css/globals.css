@@ -48,7 +48,7 @@ body {
 
 .container{width: min(1350px, 96%); max-width: none; margin: 0 auto;}
 
-h1, h2, h3, h4, h5, h6 { font-family: var(--font-brockmann);}
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-brockmann), sans-serif;}
 /* a:hover{color: var(--color-primary);} */
 
 /* .bannercaption{background: radial-gradient(circle,rgb(2, 2, 2) 0%, rgba(28, 30, 36, 0) 100%);} */
